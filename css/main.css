@@ -15,6 +15,10 @@ ul {
   z-index: 999;
 }
 
+.header img {
+  width: 170px;
+}
+
 nav {
   position: fixed;
   top: 50%;
@@ -38,7 +42,7 @@ nav li a::after {
   right: 0;
   width: 30px;
   height: 1px;
-  background: skyblue;
+  background: rgb(99, 42, 27);
   transition: 0.5s;
 }
 
@@ -53,7 +57,7 @@ nav li.on a::after {
   margin: 0 auto 30px auto;
   border-radius: 50%;
   overflow: hidden;
-  border: 20px solid rgba(0, 0, 0, 0.2);
+  border: 3px dotted rgba(0, 0, 0, 0.2);
 
   transform: translate(0, 100px);
   opacity: 0;
@@ -61,7 +65,7 @@ nav li.on a::after {
   transition: 0.5s 1s;
 }
 
-.section.on figure::after {
+/* .section.on figure::after {
   content: "";
   position: absolute;
   top: 30px;
@@ -71,10 +75,10 @@ nav li.on a::after {
   background: green;
   border-radius: 50px 0;
   transform: rotate(-25deg);
-}
+} */
 
 .section.on figure {
-  border-radius: 10%;
+  /* border-radius: 10%; */
   transform: translate(0, 0);
   opacity: 1;
 }
@@ -113,4 +117,14 @@ nav li.on a::after {
   transform: translate(0, 0);
   /* 원래 투명도로 */
   opacity: 1;
+}
+
+.footer {
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+}
+
+.footer img {
+  width: 170px;
 }
