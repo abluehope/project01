@@ -48,6 +48,8 @@ nav li a::after {
 
 nav li.on a::after {
   width: 100px;
+  height: 2px;
+  background: rgb(255, 196, 0);
 }
 
 .section figure {
